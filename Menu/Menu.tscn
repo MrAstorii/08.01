@@ -1,0 +1,60 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://dodge_assets/fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Numbers.jpg" type="Texture" id=2]
+[ext_resource path="res://gąbka.jpg" type="Texture" id=3]
+
+[sub_resource type="DynamicFont" id=2]
+size = 180
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 80
+font_data = ExtResource( 1 )
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.005
+margin_left = -13.0
+margin_top = -62.0
+margin_right = 18.0
+margin_bottom = 17.145
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 0.975
+margin_left = 422.2
+margin_top = 401.6
+margin_right = 144.2
+margin_bottom = 281.875
+custom_fonts/font = SubResource( 2 )
+text = "Zacznij
+ liczyć!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+anchor_left = 0.41
+anchor_top = 0.658
+anchor_right = 0.623
+anchor_bottom = 0.894
+margin_left = -0.0900269
+margin_top = 0.281982
+margin_right = 808.773
+margin_bottom = 542.526
+rect_scale = Vector2( 0.2, 0.2 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+icon = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
